@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's make\nDRIVING\nfun again"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/driving_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:onClick="startNewService"
+        android:text="  D R I V I N G   M O D E"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:drawableStart="@drawable/ic_menu_car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home" />
+
+    <Button
+        android:id="@+id/manual_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="  M A N U A L   M O D E"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:onClick="opengalleryman"
+        android:fontFamily="sans-serif-condensed-light"
+        android:drawableStart="@drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driving_mode" />
+
+    <TextView
+        android:id="@+id/home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
